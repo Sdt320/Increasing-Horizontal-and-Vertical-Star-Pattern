@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, j, k, n;
+    printf("Enter the number of stars per line: ");
+    scanf("%d", &n);
+
+    for (i = 1; i < 10; i++) {
+        // Print horizontal line of stars
+        for (j = 1; j <= n * i; j++) {
+            printf("*");
+        }
+        printf("\n");
+
+        // Print vertical lines of stars
+        for (k = 0; k < i; k++) {
+            printf("*\n");
+        }
+    }
+
+    return 0;
+}
